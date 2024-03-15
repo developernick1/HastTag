@@ -10,7 +10,7 @@ import Image from 'next/image'
 import TestimonialCard from './TestimonailCard'
 import { JasonGetAPI } from './api/index'
 import axios from 'axios';
-
+import {roboto, rubik, rubikBes} from './assets/fonts/fonts'
 
 
 function Content() {
@@ -44,7 +44,15 @@ function Content() {
     return (
         <div className='contentWrapper' >
             <div className='CTASection' >
-                <h1 className='headingStyle' >Get your best customize paragraph without plagiarism</h1>
+                <div className={rubik?.className} >
+                    <h1 className='headingStyle' >Get your best customize paragraph without plagiarism</h1>
+                </div>
+                <div className={roboto?.className} >
+                    <h1 className='headingStyle' >Get your best customize paragraph without plagiarism</h1>
+                </div>
+                <div className={rubikBes?.className} >
+                    <h1 className='headingStyle' >Get your best customize paragraph without plagiarism</h1>
+                </div>
                 <input type="text" name="name" className='inputMain' placeholder='Enter Yourtitle to get Paragraph on the Topic' />
             </div>
 
